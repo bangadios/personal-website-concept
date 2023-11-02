@@ -1,0 +1,860 @@
+.wrapper
+{
+    background-color: white!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*============================= 
+    NAV
+  =============================*/
+.nav
+{
+    background-color: #1f1f1f;
+    padding: 2em 2em 0 2em;
+}
+
+    .nav .lane-wrapper
+    {
+        /* z-index: 1; */
+        width: 50px;
+        height: 40px;
+        border: 2.5px #f13f3f solid;
+        border-radius: 8px;
+        padding: 2px;
+        background-color: #1f1f1f;
+    }
+
+    .nav .lane
+    {
+        height: 2px;
+        width: 30px;
+        border-radius: 50px;
+        background-color: tomato;
+        color: white;
+        margin: 6.5px 0;
+    }
+
+  /*============================= 
+    HEADER
+  =============================*/
+
+    .jumbotron
+    {
+        background-color: #1f1f1f;
+        margin-bottom: 0;
+    }
+
+        .jumbotron .container-header
+        {
+            color: white;
+        }
+
+        .jumbotron .container .row .greeting .btn-about
+        {
+            background-color: #f13f3f;
+            color: white;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+
+            .jumbotron .container .row .greeting .btn-about:hover
+            {
+                background-color: #1f1f1f;
+                color: #f13f3f;
+                border: #f13f3f 2px solid;
+                border-radius: 50px;
+                padding: 10px 30px;
+            }
+
+/*============================= 
+    ABOUT
+  =============================*/
+
+    .about .container-about
+    {
+        padding: 4em 0;
+    }
+
+        .about .container-about .section-title
+        {
+            font-family: 'Roboto Slab', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .about .container-about .section-title:hover ~ .line-break
+        {
+            height: 5px;
+            width: 250px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+        }
+
+        .about .container-about .line-break
+        {
+            height: 5px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+            transition: width 1s;
+        }
+
+        .about .container-about .row
+        {
+            padding: 4em 0;
+        }
+
+            .about .container-about .row .about-data-1 .list-group
+            {
+                padding-right: 2em;
+            }
+
+                .about .container-about .row .about-data-1 .list-group .about-data-title::first-letter
+                {
+                    color: #f13f3f;
+                }
+
+                .about .container-about .row .about-data-1 .list-group .list-group-item
+                {
+                    z-index: 1;
+                    border: 0;
+                    text-align: end;
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                }
+
+                .about .container-about .row .about-data-1 .list-group .list-group-item p
+                {
+                    color: #7e7e7e;
+                }
+
+                    /* scale item */
+                    .about .container-about .row .about-data-1 .list-group .list-group-item:hover
+                    {
+                        z-index: 2;
+                        border-radius: 5px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                        -webkit-transform: scale(1.05, 1.05);
+                        transform: scale(1.05, 1.05);
+                    }
+            
+            .about .container-about .row .about-image
+            {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+                .about .container-about .row .about-image img 
+                {
+                    border-radius: 50%;
+                    border: #1f1f1f 10px solid;
+                    transition: 0.5;
+                }
+
+                    .about .container-about .row .about-image img:hover
+                    {
+                        /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); */
+                        box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                                    0 2px 4px rgba(0,0,0,0.07), 
+                                    0 4px 8px rgba(0,0,0,0.07), 
+                                    0 8px 16px rgba(0,0,0,0.07),
+                                    0 16px 32px rgba(0,0,0,0.07), 
+                                    0 32px 64px rgba(0,0,0,0.07);
+                    }
+
+            .about .container-about .row .about-data-2 .list-group
+            {
+                padding-left: 2em;
+            }
+                
+                .about .container-about .row .about-data-2 .list-group .about-data-title::first-letter
+                {
+                    color: #f13f3f;
+                }
+
+                .about .container-about .row .about-data-2 .list-group .list-group-item
+                {
+                    z-index: 1;
+                    border: 0;
+                    text-align: start;
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                }
+
+                .about .container-about .row .about-data-2 .list-group .list-group-item p
+                {
+                    color: #7e7e7e;
+                }
+
+                    /* scale item */
+                    .about .container-about .row .about-data-2 .list-group .list-group-item:hover
+                    {
+                        z-index: 2;
+                        border-radius: 5px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+                        -webkit-transform: scale(1.05, 1.05);
+                        transform: scale(1.05, 1.05);
+                    }
+        
+        .about .container-about #about-text
+        {
+            /* padding-right: 100px; */
+            padding: 0 10em; 
+            text-align: center;
+        }
+
+            .about .container-about #about-text p
+            {
+                padding-bottom: 1em;
+            }
+
+        .about .container-about .btn-download-cv
+        {
+            background-color: white;
+            color: #f13f3f;
+            border: #f13f3f 2px solid;
+            border-radius: 50px;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+
+            .about .container-about .btn-download-cv:hover
+            {
+                background-color: #f13f3f;
+                color: white;
+                border-radius: 50px;
+                padding: 10px 30px;
+            }
+    
+/*============================= 
+    QUOTES
+  =============================*/ 
+
+.quotes
+{
+    background-color: #1f1f1f;
+    color: white;
+}  
+    .quotes .container-quotes
+    {
+        padding: 4em 0;
+    }
+
+    .quotes .container-quotes .blockquote h4
+    {
+        font-weight: 200!important;
+    }
+
+/*============================= 
+    EDUCATION
+  =============================*/
+    .education .container-education
+    {
+        padding: 4em 0;
+    }
+    
+    .education .container-education .section-title
+    {
+        font-family: 'Roboto Slab', sans-serif;
+        letter-spacing: 3px;
+    }
+
+    .education .container-education .section-title:hover ~ .line-break
+    {
+        height: 5px;
+        width: 380px;
+        border-radius: 50px;
+        background-color: #f13f3f;
+    }
+
+    .education .container-education .line-break
+    {
+        margin-bottom: 4em;
+        height: 5px;
+        width: 80px;
+        border-radius: 50px;
+        background-color: #f13f3f;
+        transition: width 1.2s;
+    }
+
+    .education .container-education .row
+    {
+        padding: 0 0;
+    }
+
+        .education .container-education .row .edu-image:hover
+        {
+            animation: kanan;
+            -webkit-animation: kanan;
+            animation-duration: 0.4s;
+            -webkit-animation-duration: 0.4s;
+        }
+
+            @keyframes kanan
+            {
+                0% {transform: rotate(0deg);}
+                50% {transform: rotate(2deg);}
+                100% {transform: rotate(0deg);}
+            }
+
+            @-webkit-keyframes kanan
+            {
+                0% {-webkit-transform: rotate(0deg);}
+                50% {-webkit-transform: rotate(2deg);}
+                100% {-webkit-transform: rotate(0deg);}
+            }
+
+        .education .container-education .row .year h4 .badge
+        {
+            background-color: #1f1f1f;
+            border-radius: 0;
+            padding: 0.8em 2em;
+            transition: 0.4s;
+        }
+
+        .education .container-education .row .year h4 .badge:hover
+        {
+            background-color: #f13f3f;
+            border-radius: 0;
+            padding: 0.8em 2em;
+        }
+
+        .education .container-education .row .lane .vertical-lane
+        {
+            height: 100px;
+            width: 5px;
+            border-radius: 50px;
+            background-color: #1f1f1f;
+        }
+
+        .education .container-education .row .edu-content .card
+        {
+            border-radius: 0;
+            border: 0;
+            transition: 0.3s;
+        }
+
+        .education .container-education .row .edu-content .card:hover
+        {
+            z-index: 2;
+            -webkit-transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                        0 2px 4px rgba(0,0,0,0.07), 
+                        0 4px 8px rgba(0,0,0,0.07), 
+                        0 8px 16px rgba(0,0,0,0.07),
+                        0 16px 32px rgba(0,0,0,0.07), 
+                        0 32px 64px rgba(0,0,0,0.07);
+        }
+
+            .education .container-education .row .edu-content .card .card-header
+            {
+                background-color: #1f1f1f;
+                color: white;
+                border-radius: 0;
+            }
+
+/*============================= 
+    SKILLS
+  =============================*/ 
+.skills
+{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+    .skills .container-skills
+    {
+        padding: 4em 0;
+    }
+
+        .skills .container-skills .section-title
+        {
+            font-family: 'Roboto Slab', sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .skills .container-skills .section-title:hover ~ .line-break
+        {
+            height: 5px;
+            width: 250px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+        }
+
+        .skills .container-skills .line-break
+        {
+            margin-bottom: 4em;
+            height: 5px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+            transition: width 1.2s;
+        }
+
+        .skills .container-skills .row
+        {
+            padding: 0 0;
+        }
+            .skills .container-skills .row .skill-progress
+            {
+                padding: 0 3%;
+                position: relative;
+            }
+
+            .skills .container-skills .row .skill-progress .technical-skill
+            {
+                font-weight: 300;
+                border: 2px white solid;
+                padding: 10px 0;
+                margin-bottom: 1em;
+                transition: ease-in-out 0.5s;
+                -webkit-transition: ease-in-out 0.5s;
+            }
+
+                .skills .container-skills .row .skill-progress .technical-skill:hover
+                {
+                    background-color: white;
+                    color: #1f1f1f;
+                    border: 3px white solid;
+                    padding: 10px 0;
+                    margin-bottom: 1em;
+                }
+
+            .skills .container-skills .row .skill-progress .professional-skill
+            {
+                font-weight: 300;
+                border: 2px white solid;
+                padding: 10px 0;
+                margin-bottom: 1em;
+                transition: ease-in-out 0.5s;
+                -webkit-transition: ease-in-out 0.5s;
+            }
+
+                .skills .container-skills .row .skill-progress .professional-skill:hover
+                {
+                    background-color: white;
+                    color: #1f1f1f;
+                    border: 3px white solid;
+                    padding: 10px 0;
+                    margin-bottom: 1em;
+                }
+
+            .skills .container-skills .row .skill-progress h5
+            {
+                font-weight: 300;               
+            }
+
+            .skills .container-skills .row .skill-progress .progress
+            {
+                height: 10px;
+            }
+
+                .skills .container-skills .row .skill-progress .progress .progress-bar
+                {
+                    height: 10px;
+                    background-color: #f13f3f;
+                }
+
+/*============================= 
+    EXPERIENCE
+  =============================*/ 
+    .experience .container-experience
+    {
+        padding: 4em 0;
+    }
+
+        .experience .container-experience .section-title
+        {
+            font-family: "Roboto Slab", sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .experience .container-experience .section-title:hover ~ .line-break
+        {
+            height: 5px;
+            width: 415px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+        }
+
+        .experience .container-experience .line-break
+        {
+            margin-bottom: 4em;
+            height: 5px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+            transition: width 1.2s;
+        }
+
+            .experience .container-experience .row .experience-content .card
+            {
+                border-radius: 0;
+                border: 0;
+                transition: 0.3s;
+            }
+
+            .experience .container-experience .row .experience-content .card:hover
+            {
+                z-index: 2;
+                -webkit-transform: scale(1.05, 1.05);
+                transform: scale(1.05, 1.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                            0 2px 4px rgba(0,0,0,0.07), 
+                            0 4px 8px rgba(0,0,0,0.07), 
+                            0 8px 16px rgba(0,0,0,0.07),
+                            0 16px 32px rgba(0,0,0,0.07), 
+                            0 32px 64px rgba(0,0,0,0.07);
+            }
+
+            .experience .container-experience .row .experience-content .card .card-header
+            {
+                background-color: #1f1f1f;
+                color: white;
+                border-radius: 0;
+            }
+
+            .experience .container-experience .row .experience-image:hover
+            {
+                animation: kiri;
+                -webkit-animation: kiri;
+                animation-duration: 0.4s;
+                -webkit-animation-duration: 0.4s;
+            }
+
+                @keyframes kiri
+                {
+                    0% {transform: rotate(0deg);}
+                    50% {transform: rotate(-2deg);}
+                    100% {transform: rotate(0deg);}
+                }
+
+                @-webkit-keyframes kiri
+                {
+                    0% {-webkit-transform: rotate(0deg);}
+                    50% {-webkit-transform: rotate(-2deg);}
+                    100% {-webkit-transform: rotate(0deg);}
+                }
+
+/*============================= 
+    POROFOLIO
+  =============================*/ 
+.portofolio
+{
+    background-color: #1f1f1f;
+    color: white;
+}
+    .portofolio .container-portofolio
+    {
+        padding: 4em 0;
+    }
+
+        .portofolio .container-portofolio .row
+        {
+            display: none;
+        }
+
+        .portofolio .container-portofolio .row:target
+        {
+            display: flex;
+        }
+
+        .portofolio .container-portofolio .button-wrapper .btn-portofolio:hover
+        {
+            background-color: #f13f3f;
+            color: white;
+        }
+    
+        .portofolio .container-portofolio .section-title
+        {
+            font-family: "Roboto Slab", sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .portofolio .container-portofolio .section-title:hover ~ .line-break
+        {
+            height: 5px;
+            width: 410px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+        }
+
+        .portofolio .container-portofolio .line-break
+        {
+            margin-bottom: 4em;
+            height: 5px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+            transition: width 1.2s;
+        }
+
+        .portofolio .container-portofolio .button-wrapper
+        {
+            text-align: center;
+            margin-bottom: 4em;
+        }
+
+        .portofolio .container-portofolio .button-wrapper .btn-portofolio
+        {
+            background-color: #1f1f1f;
+            color: #f13f3f;
+            border: #f13f3f 2px solid;
+            border-radius: 0px;
+            margin: 0 0.5em;
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+
+        .portofolio .container-portofolio .img-porto
+        {
+            padding: 5px 5px;
+        }
+
+/*============================= 
+    GALLERY
+  =============================*/
+
+    .gallery .container-gallery
+    {
+        padding: 4em 0;
+    }
+
+        .gallery .container-gallery .section-title
+        {
+            font-family: "Roboto Slab", sans-serif;
+            letter-spacing: 3px;
+        }
+
+        .gallery .container-gallery .section-title:hover ~ .line-break
+        {
+            height: 5px;
+            width: 320px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+        }
+        
+        .gallery .container-gallery .line-break
+        {
+            margin-bottom: 4em;
+            height: 5px;
+            width: 80px;
+            border-radius: 50px;
+            background-color: #f13f3f;
+            transition: width 1.2s;
+        }
+        
+        .gallery .container-gallery .content-gallery .img-gal
+        {
+            padding: 5px 5px;
+        }
+
+            .gallery .container-gallery .content-gallery .img-gal img
+            {
+                transition: 0.5s;
+                -webkit-transition: 0.5s;
+            }
+            
+                .gallery .container-gallery .content-gallery .img-gal img:hover
+                {
+                    z-index: 2;
+                    -webkit-transform: scale(1.05, 1.05);
+                    transform: scale(1.05, 1.05);
+                    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                                0 2px 4px rgba(0,0,0,0.07), 
+                                0 4px 8px rgba(0,0,0,0.07), 
+                                0 8px 16px rgba(0,0,0,0.07),
+                                0 16px 32px rgba(0,0,0,0.07), 
+                                0 32px 64px rgba(0,0,0,0.07);
+                }
+
+/*============================= 
+    GET IN TOUCH
+  =============================*/
+.get-in-touch
+{
+    background-color: #1f1f1f;
+}
+
+    .get-in-touch .container-git
+    {
+        padding: 4em 0;        
+    }
+
+        .get-in-touch .container-git .section-title
+        {
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: 300;
+            color: white;
+            margin-bottom: 64px;
+        }
+
+        .get-in-touch .container-git .icon-wrapper
+        {
+            text-align: center;
+        }
+
+            .get-in-touch .container-git .icon-wrapper a
+            {
+                margin: 0 50px;
+                color: #f13f3f;
+            }
+
+            .get-in-touch .container-git .icon-wrapper a span:hover
+            {
+                animation: rotate;
+                -webkit-animation: rotate;
+                animation-duration: 0.4s;
+                -webkit-animation-duration: 0.4s;
+            }
+
+                @keyframes rotate
+                {
+                    0%{transform: rotate(0deg);}
+                    100%{transform: rotate(360deg);}
+                }
+
+                @-webkit-keyframes rotate
+                {
+                    0%{-webkit-transform: rotate(0deg);}
+                    100%{-webkit-transform: rotate(360deg);}
+                }
+
+/*============================= 
+    GET IN TOUCH
+  =============================*/
+.footer
+{
+    padding: 2em 0;
+    background-color: #242424;
+    color: white;
+}
+
+    .footer .footer-text h4
+    {
+        font-weight: 100!important;
+        text-align: center;
+    }
+/*============================= 
+    SEPARATOR ELEMENT
+  =============================*/
+
+/* separator education*/
+#line
+{
+    position: absolute;
+    background-color: #1f1f1f;
+    width: 3px;
+    height: 550px;
+    border-radius: 50px;
+    left: 50%;
+    top: 2%;
+    margin: 0px 0 0 -2.5px;
+}
+
+#lingkaran
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: -275px 0 0 -15px;
+}
+
+#lingkaran2
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: -132px 0 0 -15px;
+}
+
+#lingkaran3
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: 7px 0 0 -15px;
+}
+
+#lingkaran4
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: 147px 0 0 -15px;
+}
+
+/* separator experience*/
+#line-Ex
+{
+    position: absolute;
+    background-color: #1f1f1f;
+    width: 3px;
+    height: 270px;
+    border-radius: 50px;
+    left: 50%;
+    top: 2%;
+    margin: 0px 0 0 -2.5px;
+}
+
+#lingkaran-Ex
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: -222px 0 0 -17px;
+}
+
+#lingkaran2-Ex
+{
+    position: absolute;
+    background-color: #f13f3f;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: white 5px solid;
+    left: 50%;
+    top: 50%;
+    margin: -82px 0 0 -17px;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+
+/* // Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) and (max-width: 991.98px) { ... } */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
